@@ -21,15 +21,15 @@ app = nonebot.get_asgi()
 driver = nonebot.get_driver()
 driver.register_adapter(ONEBOT_V11Adapter)
 
-nonebot.load_builtin_plugins("echo")
-# Load Installed Plugin
-# nonebot.load_plugin("nonebot_plugin_code")
-# nonebot.load_plugin("nonebot_plugin_gocqhttp")
-
+nonebot.load_builtin_plugins("echo") # 导入echo插件
 
 # Please DO NOT modify this file unless you know what you are doing!
 # As an alternative, you should use command `nb` or modify `pyproject.toml` to load plugins
-nonebot.load_from_toml("pyproject.toml")
+nonebot.load_from_toml("pyproject.toml") # 该文件内存储插件加载信息，删除后需要手动加载插件
+# Load Installed Plugin
+# nonebot.load_plugin("nonebot_plugin_code")
+# nonebot.load_plugin("nonebot_plugin_gocqhttp")
+# 使用 nonebot.load_plugin("plugin_name") 单独导入插件，但是需要将 nonebot.load_from_toml("pyproject.toml") 一行注释掉
 
 # Modify some config / config depends on loaded configs
 # 
