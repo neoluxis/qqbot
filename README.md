@@ -77,6 +77,7 @@ We recommend you to leave the password blank, or you will face the challenge to 
    脚本部署：
    Windows `./start.bat`
    Linux `./start.sh`
+   **第一次运行使用`first-time-start.sh`和`first-time-start.bat`**
 
 ---
 ## Documentation
